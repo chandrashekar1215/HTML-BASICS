@@ -6,8 +6,17 @@ function equal() {
     if (exp) {
         try {
             document.form.textview.value = eval(exp);
+            swal({
+                title: "Calculation Done!",
+                text: `The Calculated value is: ${eval(exp)}`,
+                icon: "success",
+              });
         } catch (error) {
-            alert(error);
+            swal({
+                title: "Calculation Not Done!",
+                text: `${error}`,
+                icon: "error",
+              });
         }
     }
 }

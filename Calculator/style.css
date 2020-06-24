@@ -10,9 +10,9 @@
     cursor: pointer;
     border-radius: 50%;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(45deg, gold, transparent);
 }
 .textview{
-    width: 204px;
     margin: 5px;
     font-size: 25px;
     padding: 5px;
@@ -22,7 +22,11 @@
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    background: rgb(89, 0, 255);
+    background: linear-gradient(45deg, black, transparent);
     box-shadow: 0 0 20px rgb(126, 119, 119);
     border: 10px solid #d0d0d0 !important;
+}
+.container{
+    width: 270px !important;
+    height: 375px !important;
 }
