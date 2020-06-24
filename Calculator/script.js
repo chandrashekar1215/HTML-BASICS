@@ -8,13 +8,14 @@ function equal() {
             document.form.textview.value = eval(exp);
             swal({
                 title: "Calculation Done!",
-                text: `The Calculated value is: ${eval(exp)}`,
+                text: ` ${exp} = ${eval(exp)} `,
                 icon: "success",
               });
         } catch (error) {
+            console.error(error + " for expression : " + exp);
             swal({
                 title: "Calculation Not Done!",
-                text: `${error}`,
+                text: `${error} in ${exp}`,
                 icon: "error",
               });
         }
